@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora App</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="calc">
+			<div class="display">
+				<div id="valorSup"></div>
+				<div id="valorInf"></div>
+
+			</div>
+          <button class="tam-2" onclick="fnClean()">C</button>
+          <button onclick="deleteChar()">&larr;</button>
+          <button class="operador" value="%" onclick="fnOperador(this.value)">%</button>
+          <button class="number" value="7" onclick="fnMostrarNumber(this.value)">7</button>
+          <button class="number"value="8" onclick="fnMostrarNumber(this.value)">8</button>
+          <button class="number" value="9" onclick="fnMostrarNumber(this.value)">9</button>
+          <button class="operador" value="X" onclick="fnOperador(this.value)">X</button>
+          <button class="number" value="4" onclick="fnMostrarNumber(this.value)">4</button>
+          <button class="number" value="5" onclick="fnMostrarNumber(this.value)">5</button>
+          <button class="number" value="6" onclick="fnMostrarNumber(this.value)">6</button>
+          <button class="operador" value="-" onclick="fnOperador(this.value)">-</button>
+          <button class="number" value="1" onclick="fnMostrarNumber(this.value)">1</button>
+          <button class="number" value="2" onclick="fnMostrarNumber(this.value)">2</button>
+          <button class="number" value="3" onclick="fnMostrarNumber(this.value)">3</button>
+          <button class="operador" value="+" onclick="fnOperador(this.value)">+</button>
+          <button class="number tam-2" value="0" onclick="fnMostrarNumber(this.value)">0</button>
+          <button class="number" value="." onclick="fnOperador(this.value)">.</button>
+          <button class="operador" onclick="fnMuestro()">=</button>
+
+		</div>
+
+	</div>
+</body>
+</html>
